@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	int hours,min;
+	printf("enter timeduration in min");
+	scanf("%d%d",&hours,&min);
+	150min=hours/60min;
+	printf("%dhours and %dmin",hours,min);
+}
