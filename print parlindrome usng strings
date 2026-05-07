@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char s[20],s1[20];
+	printf("enter any  string");
+	gets(s);
+	strcpy(s1,s);
+	strrev(s1);
+	if(strcmp(s,s1)==0)
+	printf("parlindrome");
+	else
+	printf("not a parlindrome");
+	
+}
