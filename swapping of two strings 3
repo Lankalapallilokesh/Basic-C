@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[20], temp[20], s1[20];
+    
+    printf("Enter any string: ");
+    fgets(s, sizeof(s), stdin);
+    
+    // Remove newline character from fgets if present
+    s[strcspn(s, "\n")] = '\0';
+
+    printf("Given string is: %s\n", s);
+
+    // Copy s into temp, then temp into s1
+    strcpy(temp, s);
+    strcpy(s1, temp);
+
+    printf("Copied string is: %s\n", s1);
+
+    return 0;
+}
