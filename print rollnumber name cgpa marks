@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	char name[20];
+	int rollnumber;
+	float cgpa;
+	printf("enter  name,rollnumber,cgpa");
+	scanf("%s%d%f",name,&rollnumber,&cgpa);
+	printf("name:%s\n rollnumber:%d\n cgpa:%f,name,rollnumber,cgpa");
+}
