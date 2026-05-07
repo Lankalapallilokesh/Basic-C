@@ -1,0 +1,24 @@
+#include<stdio.h>
+typedef struct
+{
+	char name[20];
+	int m1,m2,m3,total;
+	float avg;
+	}student;
+	int main()
+{
+	student s[20];
+	int n,i;
+	printf("enter number student");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("enter names and marks in 3sub");
+		scanf("%s%d%d%d",s[i].name,&s[i].m1,&s[i].m2,&s[i].m3);
+		s[i].total=s[i].m1+s[i].m2+s[i].m3;
+		s[i].avg=s[i].total/3.0;
+	}
+		printf("name\tm1\tm2\tm3\ttotal\tavg");
+		for(i=0;i<n;i++)
+		printf("\n%s\t%d\t%d\t%d\t%d\t%f\t",s[i].name,s[i].m1,s[i].m2,s[i].m3,s[i].total,s[i].avg);
+}
