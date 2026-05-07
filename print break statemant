@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int monthnum;
+	printf("enter monthnum");
+	scanf("%d",&monthnum);
+	switch(monthnum)
+	{
+	case 3:printf("summer");
+	case 4:printf("summer");	
+	case 5:printf("summer");
+	case 6:printf("summer");
+	break;
+	case  7:printf("rainy");
+	case  8:printf("rainy");
+	case  9:printf("rainy");
+	case  10:printf("rainy");
+	break;
+	case 11:printf("winter");
+	case 12:printf("winter");
+	case 1:printf("winter");
+	case 2:printf("winter");
+	break;
+	defalut:printf("not a season");
+	}
+}
