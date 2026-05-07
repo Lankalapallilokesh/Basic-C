@@ -1,0 +1,35 @@
+#include<stdio.h>
+typedef struct
+{
+	int m1,m2,p,c;
+}mpc;
+typedef struct
+{
+	int b,z,p,c;
+}bipc;
+typedef union
+{
+	mpc m;
+	bipc b;
+	}groups;
+int main()
+{
+	groups g;
+	char ch ;
+printf("enter groups m/b");
+scanf("%c",&ch);
+if(ch=='m')
+{
+	printf("enter marks of m1,m2,p,c");
+	scanf("%d%d%d%d",&g.m.m1,&g.m.m2,&g.m.p,&g.m.c);
+	printf("m1=%d\nm2=%d\np=%d\nc=%d",g.m.m1,g.m.m2,g.m.p,g.m.c);
+}
+else if(ch=='b')
+{
+	printf("enter marks of b,z,p,c");
+	scanf("%d%d%d%d",&g.b.b,&g.b.z,&g.b.p,&g.b.c);
+	printf("b=%d\nz=%d\n%p=%d\nc=%d",g.b.b,g.b.z,g.b.p,g.b.c);
+}
+else
+printf("not a valid group");
+}
