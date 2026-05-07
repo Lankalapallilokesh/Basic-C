@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int a,es=0,os=0;
+	{
+	for(a=1;a<=20;a++)
+	if(a%2==0)
+	es=es+a;
+	else
+	os=os+a;
+    }
+    printf("sum of even is:%d",es);
+    printf("\n sum of odd is:%d",os);
+}
