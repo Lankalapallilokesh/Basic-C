@@ -1,0 +1,18 @@
+#include<stdio.h>
+struct student
+{
+	int rollnumber;
+	char studentname[20],addressofstudent[20];
+};
+int main()
+{
+	struct student s1,s2;
+	printf("enter rollnumber,student1name,address of student1");
+	scanf("%d%s%s",&s1.rollnumber,s1.studentname,s1.addressofstudent);
+	printf("enter rollnumber,studentname2,address of student2");
+	scanf("%d%s%s",&s2.rollnumber,s2.studentname,s2.addressofstudent);
+	printf("\n details of s1");
+	printf("\nrollnumber is:%d\nname is:%s\naddressofstudent1:%s",s1.rollnumber,s1.studentname,s1.addressofstudent);
+	printf("\n details of s2");
+	printf("\nrollnumber is:%d\nname is:%s\nadressofstudent2:%s",s2.rollnumber,s2.studentname,s2.addressofstudent);
+}
