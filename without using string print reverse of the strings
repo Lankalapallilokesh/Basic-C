@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	char s1[20],s2[20];
+	int l=0,i=0;
+	printf("enter any string");
+	scanf("%s",s1);
+	while(s1[l]!=0)
+	l++;
+	i--;
+	while(l>=0)
+	{
+		s2[i]=s1[l];
+		i++;
+		l--;
+	}
+	   s2[i]='\0';
+	   printf("reverse string is:%s",s2);
+}
